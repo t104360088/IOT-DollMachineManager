@@ -1,4 +1,4 @@
-package com.example.rd_air01.iot_dollmachinemanager;
+package com.example.rd_air01.iot_dollmachinemanager.rawData;
 
 import android.support.annotation.NonNull;
 import android.util.Log;

@@ -8,6 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.rd_air01.iot_dollmachinemanager.rawData.RawData;
+import com.example.rd_air01.iot_dollmachinemanager.rawData.RawDataManager;
+import com.example.rd_air01.iot_dollmachinemanager.user.User;
+import com.example.rd_air01.iot_dollmachinemanager.user.UserManager;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.ArrayList;

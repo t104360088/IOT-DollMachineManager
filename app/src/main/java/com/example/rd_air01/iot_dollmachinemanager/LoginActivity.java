@@ -15,6 +15,9 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.rd_air01.iot_dollmachinemanager.rawData.RawDataManager;
+import com.example.rd_air01.iot_dollmachinemanager.user.User;
+import com.example.rd_air01.iot_dollmachinemanager.user.UserManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "444738298773",
+    "firebase_url": "https://iot-dollmachinemanager.firebaseio.com",
+    "project_id": "iot-dollmachinemanager",
+    "storage_bucket": "iot-dollmachinemanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444738298773:android:f6e51afe39a5f56c",
+        "android_client_info": {
+          "package_name": "com.example.rd_air01.iot_dollmachinemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444738298773-g8gcbsm7sf82stfc21o08v5c45iarrra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rd_air01.iot_dollmachinemanager",
+            "certificate_hash": "36e2c235cf9b05d14b79603f04825277c5834e3b"
+          }
+        },
+        {
+          "client_id": "444738298773-2qd0a3o48higa950h9hfi0oklupf48l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxcQmQ4z_dG7dMqHqBNdmneGqkbrZWhEU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444738298773-2qd0a3o48higa950h9hfi0oklupf48l7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -45,6 +45,7 @@ public class RawDataManager {
 
                 } else {
                     Log.d("原始資料：", "不存在");
+                    rawDataList.clear();
                 }
             }
 

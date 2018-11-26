@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/image_login"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MasterActivity" />
 
         <service android:name=".fcm.MyFirebaseInstanceIDService">
             <intent-filter>
@@ -30,7 +30,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".SlaveActivity"></activity>
+        <activity android:name=".SlaveActivity" />
+        <activity android:name=".ManageStatusActivity"></activity>
     </application>
 
 </manifest>

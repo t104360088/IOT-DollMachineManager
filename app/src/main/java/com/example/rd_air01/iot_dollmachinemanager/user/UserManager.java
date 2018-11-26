@@ -59,6 +59,7 @@ public class UserManager {
 
                 } else {
                     Log.d("使用者資料：", "不存在");
+                    userList.clear();
                 }
             }
 
@@ -78,6 +79,17 @@ public class UserManager {
 
         for (int i = 0; i < userList.size(); i++) {
             if (userList.get(i).email.equals(email) ) {
+                return userList.get(i);
+            }
+        }
+        return null;
+    }
+
+    //從所有user清單中，回傳特定user資料
+    public User getUserData(int machineNum) {
+
+        for (int i = 0; i < userList.size(); i++) {
+            if (userList.get(i).machine_num == machineNum) {
                 return userList.get(i);
             }
         }

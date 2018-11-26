@@ -4,7 +4,7 @@ public class User {
 
     public int right;
     public int machine_num;
-    public String uid;
+    public String phone;
     public String token;
     public String email;
 }

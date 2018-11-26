@@ -26,7 +26,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button signUpBtn;
     private ListView dataList;
     private ProgressBar progressBar;
-    private EditText emailField, machineNumField;
+    private EditText emailField, phoneField, machineNumField;
     private UserManager userManager = UserManager.getInstance();
     private ArrayAdapter<String> arrayAdapter;
 
@@ -35,11 +35,13 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        setTitle("註冊台主帳號");
 
         signUpBtn = findViewById(R.id.signUpBtn);
         dataList = findViewById(R.id.listView);
         progressBar = findViewById(R.id.progressBar);
         emailField = findViewById(R.id.emailField);
+        phoneField = findViewById(R.id.phoneField);
         machineNumField = findViewById(R.id.machineNumField);
 
 
@@ -64,20 +66,21 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 String email = emailField.getText().toString().trim();
+                String phone = phoneField.getText().toString().trim();
                 String machine_num = machineNumField.getText().toString().trim();
 
-                if (TextUtils.isEmpty(email) || TextUtils.isEmpty(machine_num)) {
+                if (TextUtils.isEmpty(email) || TextUtils.isEmpty(phone) || TextUtils.isEmpty(machine_num)) {
                     Toast.makeText(getApplicationContext(), "請輸入完整資料", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                signUp(email, machine_num);
+                signUp(email, phone, machine_num);
             }
         });
 
     }
 
-    private void signUp(final String email, final String machine_num) {
+    private void signUp(final String email, final String phone, final String machine_num) {
 
         //驗證機台編號是否被使用
         ArrayList<User> userList = userManager.getUserList();
@@ -108,6 +111,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                         User user = new User();
                         user.machine_num = Integer.parseInt(machine_num);
+                        user.phone = phone;
                         user.email = email;
                         user.right = 1;
 
@@ -115,6 +119,7 @@ public class SignUpActivity extends AppCompatActivity {
                         sendResetPwdMail(email);
 
                         emailField.setText("");
+                        phoneField.setText("");
                         machineNumField.setText("");
                     }
                 });
